@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Tic Tacc Teaux</title>
+      <link rel="icon" type="image/png" href="favi.png"/>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -10,24 +11,31 @@
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
     </head>
     <body>
 
-      <div class="col">
+      <button id="signOut">Sign Out</button>
+      <button id="newGame">New Game</button>
+
+    <div id="signout-success"></div>
+    <div id="signout-success-message"></div>
+    <div id="error-message"></div>
+
+
         <div id='box1'>
             <p class='maintitle'>TIC <br>
                                  TACC <br>
                                  TEAUX <br>
               <span id='subtitle'>"three in a reaux"</span></p>
         </div>
-      </div>
 
             <br>
 
             <form id="signUp">
               <input name="credentials[email]" type="text" placeholder="Email" required>
               <br>
-              <input name="credentials[password]" type="text" placeholder="Password" required>
+              <input name="credentials[password]" type="password" placeholder="Password" required>
               <br>
               <input name="credentials[password_confirmation]" type="password" placeholder="Re-type password" required>
               <br>
@@ -43,7 +51,7 @@
             <form id="signIn">
               <input name="credentials[email]" type="text" placeholder="Email" required>
               <br>
-              <input name="credentials[password]" type="text" placeholder="Password" required>
+              <input name="credentials[password]" type="password" placeholder="Password" required>
               <br>
               <br>
               <button>Sign In</button>
@@ -55,48 +63,54 @@
             <br>
             <br>
 
-            <div id='signoutbox'>
-              <form id="signout">
-                <button id="sobutton">Sign Out</button>
-              </form>
-
-              <div id="signout-success"></div>
-              <div id="signout-success-message"></div>
-            </div>
-
-          <div class="row row-cols-2">
-
-          <div class="col">
-
-          </div>
-
-          <div class="col">
-            <div id='box3'>
-              <div class="playerscore col-sm"></div>
-              <div class="compscore col-sm"></div>
-              <div class="encouragement"></div>
-            </div>
-          </div>
-
-          <div class="col">
-              <div class="game-board">
-                  <div class="grid-box">X</div>
-                  <div class="grid-box">X</div>
-                  <div class="grid-box">X</div>
-                  <div class="grid-box">X</div>
-                  <div class="grid-box">X</div>
-                  <div class="grid-box">X</div>
-                  <div class="grid-box">X</div>
-                  <div class="grid-box">X</div>
-                  <div class="grid-box">X</div>
+              <div id="game-board">
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
+                  <div class="grid-box">
+                    <img src="tack.gif" width="50" height="50" alt="thumbtack" class="thumbtack">
+                    <img src="thumb.gif" width="40" height="40" alt="catthumb" class="catthumb">
+                  </div>
                   <span class="circle"></span>
               </div>
-          </div>
 
-          <div id="error-message"></div>
-
-        </div>
-
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
 
     </body>
 </html>

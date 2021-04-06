@@ -27,26 +27,19 @@ const signOut = function () {
   })
 }
 
-/* const newgame = function () {
+const newGame = function () {
   return $.ajax({
     method: 'POST',
     url: config.apiUrl + '/games',
-    data: "game": {
-      "cells": ["","","","","","","","",""],
-      "over": false,
-      "_id": "5e823ba98929cc4e95e2f5d9",
-      "owner": "5e82311c8929cc4e95e2f5d8",
-      "createdAt": "2020-03-30T18:34:17.772Z",
-      "updatedAt": "2020-03-30T18:34:17.772Z",
-      "__v": 0
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
     }
   })
-}*/
-
+}
 
 module.exports = {
   signUp,
   signIn,
-  signOut
-  //newgame
+  signOut,
+  newGame
 }
