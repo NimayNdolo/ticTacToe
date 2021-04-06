@@ -12,6 +12,91 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+
+      <div class="col">
+        <div id='box1'>
+            <p class='maintitle'>TIC <br>
+                                 TACC <br>
+                                 TEAUX <br>
+              <span id='subtitle'>"three in a reaux"</span></p>
+        </div>
+      </div>
+
+            <br>
+
+            <form id="signUp">
+              <input name="credentials[email]" type="text" placeholder="Email" required>
+              <br>
+              <input name="credentials[password]" type="text" placeholder="Password" required>
+              <br>
+              <input name="credentials[password_confirmation]" type="password" placeholder="Re-type password" required>
+              <br>
+              <br>
+              <button>Sign Up</button>
+            </form>
+
+            <div id="signUp-success"></div>
+            <div id="signUp-success-message"></div>
+
+            <br>
+
+            <form id="signIn">
+              <input name="credentials[email]" type="text" placeholder="Email" required>
+              <br>
+              <input name="credentials[password]" type="text" placeholder="Password" required>
+              <br>
+              <br>
+              <button>Sign In</button>
+            </form>
+
+            <div id="signIn-success"></div>
+            <div id="signIn-success-message"></div>
+
+            <br>
+            <br>
+
+            <div id='signoutbox'>
+              <form id="signout">
+                <button id="sobutton">Sign Out</button>
+              </form>
+
+              <div id="signout-success"></div>
+              <div id="signout-success-message"></div>
+            </div>
+
+          <div class="row row-cols-2">
+
+          <div class="col">
+
+          </div>
+
+          <div class="col">
+            <div id='box3'>
+              <div class="playerscore col-sm"></div>
+              <div class="compscore col-sm"></div>
+              <div class="encouragement"></div>
+            </div>
+          </div>
+
+          <div class="col">
+              <div class="game-board">
+                  <div class="grid-box">X</div>
+                  <div class="grid-box">X</div>
+                  <div class="grid-box">X</div>
+                  <div class="grid-box">X</div>
+                  <div class="grid-box">X</div>
+                  <div class="grid-box">X</div>
+                  <div class="grid-box">X</div>
+                  <div class="grid-box">X</div>
+                  <div class="grid-box">X</div>
+                  <span class="circle"></span>
+              </div>
+          </div>
+
+          <div id="error-message"></div>
+
+        </div>
+
+
     </body>
 </html>

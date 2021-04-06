@@ -1,1 +1,118 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;400;500&family=Bebas+Neue&display=swap');
+@page { size: 10in 8in; margin: 2cm };
+
+body {
+  background: rgb(243,248,242);
+  background: linear-gradient(141deg, rgba(243,248,242,1) 0%, rgba(252,176,126,1) 50%, rgba(235,233,233,1) 100%);
+  background-repeat: none;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Archivo', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(243, 248, 242, .7);
+  color: rgb(255, 94, 91);
+  border-radius: 20px;
+  outline: 0;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 170px;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgb(255, 94, 91);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 50px;
+}
+
+.maintitle {
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(255, 94, 91);
+  font-size: 150px;
+  letter-spacing: 8px;
+  line-height: 100px;
+  margin-top: 3%;
+}
+
+#signin {
+
+}
+
+#subtitle {
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(255, 166, 43);
+  font-size: 20px;
+  letter-spacing: 8px;
+}
+
+.playerscore {
+  border: solid 2px rgb(118, 137, 72);
+}
+
+.compscore {
+  border: solid 2px rgb(118, 137, 72);
+}
+
+#box1 {
+  margin: 30px;
+}
+
+#signoutbox {
+  position: relative;
+  margin: 30px;
+}
+
+#box3 {
+
+}
+
+.game-board {
+  display: grid;
+  margin-top: -700px;
+  margin-left: 95%;
+  padding: 30px;
+  grid-template-columns: repeat(6, 150px);
+  grid-template-rows: 150px 150px 150px;
+  grid-auto-flow: column;
+  width: 600px;
+  grid-gap: 10px;
+  position: relative;
+}
+
+.grid-box {
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border: solid 7px rgb(243, 248, 242);
+  border-radius: 10px;
+  z-index: 1;
+  background-color: rgba(243, 248, 242, .3);
+}
+
+.grid-box:hover {
+  background-color: rgba(255, 166, 48, .7);
+}
+
+.circle {
+  margin-left: -250px;
+  margin-top: -85px;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(3, 71, 50);
+  border-radius: 50%;
+  display: inline-block;
+  z-index: -1;
+  position: relative;
+}
+
+.signoutbox {
+  padding-left: 300px;
+  padding-top: -300px;
+}
