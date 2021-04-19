@@ -122,6 +122,14 @@ input {
   margin-left: 3%
 }
 
+#error-message {
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(255, 94, 91);
+  font-size: 20px;
+  letter-spacing: 8px;
+  margin-left: 3%
+}
+
 #game-board {
   display: grid;
   margin-left: 45%;
@@ -129,8 +137,16 @@ input {
   grid-template-columns: repeat(6, 150px);
   grid-template-rows: 150px 150px 150px;
   grid-auto-flow: column;
-  width: 600px;
+  width: 40%;
   grid-gap: 10px;
+}
+
+#player-alert {
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(255, 94, 91);
+  font-size: 20px;
+  letter-spacing: 8px;
+  margin-left: 3%
 }
 
 .grid-box {
@@ -162,4 +178,9 @@ button:hover {
   display: inline-block;
   z-index: -1;
   position: relative;
+}
+
+.gen-alerts {
+  margin-left: 45%;
+  padding-top: 80px;
 }
