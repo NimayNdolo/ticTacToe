@@ -10,4 +10,5 @@ $(() => {
   $('#signUp').on('submit', events.onSignUp)
   $('#signIn').on('submit', events.onSignIn)
   $('#signOut').on('click', events.onSignOut)
+  $('#game-board').on('click', events.onPlayerTurn)
 })

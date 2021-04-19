@@ -37,9 +37,30 @@ const newGame = function () {
   })
 }
 
+const playerTurn = function (gameIndex, currentMove, gameOver) {
+  console.log(store.game)
+  return $.ajax({
+    method: 'PATCH',
+    url: config.apiUrl + '/games/' + store.game._id,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    data: {
+      game: {
+        cell: {
+          index: gameIndex,
+          value: currentMove
+        },
+        over: gameOver
+      }
+    }
+  })
+}
+
 module.exports = {
   signUp,
   signIn,
   signOut,
-  newGame
+  newGame,
+  playerTurn
 }
