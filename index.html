@@ -15,51 +15,45 @@
     </head>
     <body>
 
-      <div class="gen-alerts">
+      <div id="buttondiv">
+        <button id="newGame2">New Game</button>
+        <button id="signOut">Sign Out</button>
+      </div>
 
           <div id="signUp-success"></div>
-          <div id="signUp-success-message"></div>
           <div id="signIn-success"></div>
-          <div id="signIn-success-message"></div>
-          <div id='player-alert'></div>
+          <!-- <div id='player-alert'></div> -->
           <div id="signout-success"></div>
-          <div id="signout-success-message"></div>
           <div id="error-message"></div>
-    </div>
 
-      <button id="signOut">Sign Out</button>
-      <button id="newGame">New Game</button>
+              <p class='maintitle'>TIC <br>TACC <br>TEAUX</p>
 
-        <div id='box1'>
-            <p class='maintitle'>TIC <br>
-                                 TACC <br>
-                                 TEAUX <br>
-              <span id='subtitle'>"three in a reaux"</span></p>
-        </div>
+              <div id="authbox">
+                <form id="signUp">
+                  <input name="credentials[email]" type="text" placeholder="Email" required>
+                  <br>
+                  <input name="credentials[password]" type="password" placeholder="Password" required>
+                  <br>
+                  <input name="credentials[password_confirmation]" type="password" placeholder="Re-type password" required>
+                  <br>
+                  <br>
+                  <button>Sign Up</button>
+                </form>
 
-            <br>
+                  <br>
+                  <br>
 
-            <form id="signUp">
-              <input name="credentials[email]" type="text" placeholder="Email" required>
-              <br>
-              <input name="credentials[password]" type="password" placeholder="Password" required>
-              <br>
-              <input name="credentials[password_confirmation]" type="password" placeholder="Re-type password" required>
-              <br>
-              <br>
-              <button>Sign Up</button>
-            </form>
+                <form id="signIn">
+                  <input name="credentials[email]" type="text" placeholder="Email" required>
+                  <br>
+                  <input name="credentials[password]" type="password" placeholder="Password" required>
+                  <br>
+                  <br>
+                  <button>Sign In</button>
+                </form>
+            </div>
 
-            <br>
-
-            <form id="signIn">
-              <input name="credentials[email]" type="text" placeholder="Email" required>
-              <br>
-              <input name="credentials[password]" type="password" placeholder="Password" required>
-              <br>
-              <br>
-              <button>Sign In</button>
-            </form>
+            <button id="newGame">New Game</button>
 
             <br>
             <br>
@@ -74,7 +68,7 @@
                   <div class="grid-box" data-cell-index="6"></div>
                   <div class="grid-box" data-cell-index="7"></div>
                   <div class="grid-box" data-cell-index="8"></div>
-                  <span class="circle"></span>
+                  <div class="circle"></div>
               </div>
 
               <br>

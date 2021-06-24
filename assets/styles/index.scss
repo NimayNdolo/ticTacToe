@@ -3,29 +3,23 @@
 @page { size: 10in 8in; margin: 2cm };
 
 body {
-  background: rgb(243,248,242);
-  background: linear-gradient(141deg, rgba(243,248,242,1) 0%, rgba(252,176,126,1) 50%, rgba(235,233,233,1) 100%);
-  justify-content: center;
-  background-size: cover;
+  background: rgb(252,176,126);
+  // background: linear-gradient(141deg, rgba(243,248,242,1) 0%, rgba(252,176,126,1) 50%, rgba(235,233,233,1) 100%);
 }
 
 button {
   font-family: 'Archivo', sans-serif;
-  appearance: none;
-  -webkit-appearance: none;
   background-color: rgba(243, 248, 242, .7);
   color: rgb(255, 94, 91);
   border-radius: 20px;
-  outline: 0;
-  margin: 5px;
-  padding: 5px;
+  border: none;
   margin-left: 170px;
 }
 
 input {
   background: transparent;
   border: 0;
-  border-bottom: 2px solid rgb(255, 94, 91);
+  border-bottom: 5px dashed rgb(255, 94, 91);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -35,94 +29,29 @@ input {
   color: rgb(3, 71, 50);
 }
 
-.maintitle {
-  font-family: 'Bebas Neue', cursive;
-  color: rgb(255, 94, 91);
-  font-size: 150px;
-  letter-spacing: 8px;
-  line-height: 100px;
-  margin-top: 3%;
-  padding-right: 20px;
-}
-
-#signUp {
-  margin-left: 40%;
-  margin-top: -5%;
-}
-
-#signIn {
-  margin-left: 40%;
-  margin-top: -17%;
-}
-
-#subtitle {
-  font-family: 'Bebas Neue', cursive;
-  color: rgb(255, 166, 43);
-  font-size: 20px;
-  letter-spacing: 8px;
-}
-
-#box1 {
-  margin: 30px;
-}
-
-#signOut {
-  margin-left: 90%;
-  padding-top: -100px;
-}
-
 #newGame {
-  margin-left: 89.5%;
-  padding-top: -40%;
+  padding: 70px;
+  margin-left: 45%;
+  margin-top: 5%;
 }
 
-#signIn-success-message {
-  font-family: 'Bebas Neue', cursive;
-  color: rgb(255, 94, 91);
-  font-size: 20px;
-  letter-spacing: 8px;
-  margin-left: 3%
+#buttondiv {
+  display: inline-flex;
+  margin-left: 65%;
+  margin-top: 1%;
 }
 
-#signIn-success {
-  font-family: 'Bebas Neue', cursive;
-  color: rgb(255, 94, 91);
-  font-size: 20px;
-  letter-spacing: 8px;
-  margin-left: 3%
+#authbox {
+  margin-left: 38%;
+  margin-top: -19%;
+  width: 50%;
 }
 
-#signout-success-message {
-  font-family: 'Bebas Neue', cursive;
-  color: rgb(255, 94, 91);
-  font-size: 20px;
-  letter-spacing: 8px;
-}
-
-#signout-success {
-  font-family: 'Bebas Neue', cursive;
-  color: rgb(255, 94, 91);
-  font-size: 20px;
-  letter-spacing: 8px;
-}
-
-#signUp-success-message {
-  font-family: 'Bebas Neue', cursive;
-  color: rgb(255, 94, 91);
-  font-size: 20px;
-  letter-spacing: 8px;
-  margin-left: 3%
-}
-
-#signUp-success {
-  font-family: 'Bebas Neue', cursive;
-  color: rgb(255, 94, 91);
-  font-size: 20px;
-  letter-spacing: 8px;
-  margin-left: 3%
-}
-
-#error-message {
+#signIn-success,
+#signout-success,
+#signUp-success,
+#error-message,
+#player-alert {
   font-family: 'Bebas Neue', cursive;
   color: rgb(255, 94, 91);
   font-size: 20px;
@@ -133,7 +62,7 @@ input {
 #game-board {
   display: grid;
   margin-left: 45%;
-  margin-top: -30%;
+  margin-top: -3%;
   grid-template-columns: repeat(6, 150px);
   grid-template-rows: 150px 150px 150px;
   grid-auto-flow: column;
@@ -141,12 +70,15 @@ input {
   grid-gap: 10px;
 }
 
-#player-alert {
+.maintitle {
   font-family: 'Bebas Neue', cursive;
   color: rgb(255, 94, 91);
-  font-size: 20px;
+  font-size: 150px;
   letter-spacing: 8px;
-  margin-left: 3%
+  line-height: 100px;
+  margin-top: 13%;
+  margin-left: 33px;
+  padding-right: 20px;
 }
 
 .grid-box {
@@ -180,7 +112,27 @@ button:hover {
   position: relative;
 }
 
-.gen-alerts {
-  margin-left: 45%;
-  padding-top: 80px;
-}
+// #signUp {
+//   margin-left: 40%;
+//   margin-top: -5%;
+// }
+//
+// #signIn {
+//   margin-left: 40%;
+//   margin-top: -17%;
+// }
+
+// #signOut {
+//   margin-left: 90%;
+//   padding-top: -100px;
+// }
+
+// #newGame {
+//   margin-left: 89.5%;
+//   padding-top: -40%;
+// }
+
+// .gen-alerts {
+//   margin-left: 45%;
+//   padding-top: 80px;
+// }
