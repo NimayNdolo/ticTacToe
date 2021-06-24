@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Tic Tacc Teaux</title>
+      <link rel="icon" type="image/png" href="public/pics/favi.png"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
+    </head>
+    <body>
+
+      <div id="buttondiv">
+        <button id="newGame2">New Game</button>
+        <button id="signOut">Sign Out</button>
+      </div>
+
+          <div id="signUp-success"></div>
+          <div id="signIn-success"></div>
+          <!-- <div id='player-alert'></div> -->
+          <div id="signout-success"></div>
+          <div id="error-message"></div>
+
+              <p class='maintitle'>TIC <br>TACC <br>TEAUX</p>
+
+              <div id="authbox">
+                <form id="signUp">
+                  <input name="credentials[email]" type="text" placeholder="Email" required>
+                  <br>
+                  <input name="credentials[password]" type="password" placeholder="Password" required>
+                  <br>
+                  <input name="credentials[password_confirmation]" type="password" placeholder="Re-type password" required>
+                  <br>
+                  <br>
+                  <button>Sign Up</button>
+                </form>
+
+                  <br>
+                  <br>
+
+                <form id="signIn">
+                  <input name="credentials[email]" type="text" placeholder="Email" required>
+                  <br>
+                  <input name="credentials[password]" type="password" placeholder="Password" required>
+                  <br>
+                  <br>
+                  <button>Sign In</button>
+                </form>
+            </div>
+
+            <button id="newGame">New Game</button>
+
+            <br>
+            <br>
+
+              <div id="game-board">
+                  <div class="grid-box" data-cell-index="0"></div>
+                  <div class="grid-box" data-cell-index="1"></div>
+                  <div class="grid-box" data-cell-index="2"></div>
+                  <div class="grid-box" data-cell-index="3"></div>
+                  <div class="grid-box" data-cell-index="4"></div>
+                  <div class="grid-box" data-cell-index="5"></div>
+                  <div class="grid-box" data-cell-index="6"></div>
+                  <div class="grid-box" data-cell-index="7"></div>
+                  <div class="grid-box" data-cell-index="8"></div>
+                  <div class="circle"></div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+    </body>
+</html>
+
+<!-- <img src="public/pics/tack.gif" width="50" height="50" alt="thumbtack" class="X">
+<img src="public/pics/thumb.gif" width="40" height="40" alt="catthumb" class="O"> -->
